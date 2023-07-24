@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    font-family: 'Cinzel';
+
+    display: flex;
+}   
+
+.img-container {
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    background-position: 58% 10%;
+    width: 32vw;
+    height: 100vh;
+
+    position: relative;
+}
+
+.logo-div {
+    position: absolute;
+    top: 40%;
+
+    width: 100%;
+    background-color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0.6;
+}
+
+.logo {
+    padding-top: 8px;
+    height: 10vh;
+}
+
+.logo-span {
+    color: white;
+    font-size: 2rem;
+}
+
+form {
+    flex-grow: 1;
+}
+
+.introduction-container {
+    padding: 2rem;
+    height: 20vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.introduction {
+    font-size: 0.9rem;
+    text-align: center;
+}
