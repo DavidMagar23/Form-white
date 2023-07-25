@@ -10,28 +10,100 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Delicious+Handrawn&family=Gochi+Hand&family=Indie+Flower&family=Nunito:ital,wght@0,200;0,300;1,200&family=Open+Sans:wght@300&family=Poppins:wght@200;400&display=swap" rel="stylesheet">
 
-    <title>Sign up - Dota 2: White</title>
+    <title>Sign up - Dota 2: Contrast</title>
 </head>
 <body>
     <div class="img-container">
         <div class="logo-div">
             <img src="img/dota2logo.jpg" alt="logo" class="logo">
-            <span class="logo-span">Dota 2: White</span>
+            <span class="logo-span">Dota 2: Contrast</span>
         </div> 
     </div>
-    <form action="" method="post">
+    <form action="" method="">
         <section class="introduction-container">
-            <p class="introduction">And now, born from the ashes, 
-                <br>there arises a warrior in bloodied black.</p>
+            <p class="introduction">And now, <span class="red firstSpanRed"></span>from the <span class="black firstSpanBlack"></span> 
+                <br>there arises a <span class="red secondSpanRed"></span> in bloodied <span class="black secondSpanBlack"></span></p>
         </section>
 
-        <div class="form-row">
-            <h3>Are you ready warrior?</h3>
+        <div class="form-img-container">
+            <img src="img/void.jpg" alt="background" class="form-background">
+        </div>
 
-            <p>
-                <label for="username">Name </label>
-                <input type="text" name="username" id="username">
-            </p>
+        <div class="form-container">
+            <h3>Sign Up Form</h3>
+
+            <div class="row">
+                <label for="username">
+                    Name<span aria-label="required">*</span>
+                </label>
+                <input type="text" name="username" id="username" placeholder="David" required>
+            </div>
+
+            <div class="row">
+            <label for="pwd">
+                Password<span aria-label="required">*</span>
+            </label>
+            <input type="password" name="password" id="pwd" minlength="6" placeholder="4721DviaD" required>    
+        </div>
+
+            <div class="row">
+                <label for="pwd2">
+                    Confirm Password<span aria-label="required"></span>
+                </label>
+                <input type="password" name="password2" id="pwd2" minlength="6" placeholder="4721DviaD" required>    
+            </div>
+
+            <div class="row">
+                <label for="age">
+                    Age 
+                </label>
+                <input type="number" name="age" id="age" min="12" max="99" placeholder="18">
+            </div>
+
+            <fieldset>
+                <div></div>
+                <legend>Gender </legend>
+                <div class="button-container">
+                    <div class="radio-buttons">
+                        <input type="radio" name="gender" id="male">
+                        <label for="male">
+                            Male 
+                        </label>
+                    </div>
+                    
+                    <div class="radio-buttons">
+                        <input type="radio" name="gender" id="female">
+                        <label for="female">
+                            Female 
+                        </label>  
+                    </div>
+
+                    <div class="radio-buttons">
+                        <input type="radio" name="gender" id="other">
+                        <label for="other">
+                            Other 
+                        </label>  
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="row">
+                <label for="email">
+                    Email<span aria-label="required">*</span>
+                </label>
+                <input type="email" name="email" id="email" placeholder="David545@gmail.com" required>
+            </div>
+
+            <div class="row">
+                <label for="is-available" class="is-available-label">
+                    <input type="checkbox" name="is-available" id="is-available" checked> 
+                    You can send me news on updates and changes to my email.
+                </label> 
+            </div>
+
+            <div class="row">
+                <button type="submit">Create an account</button>
+            </div>
         </div>
     </form>
 </body>
